@@ -1,0 +1,97 @@
+﻿li {
+    color: blue;
+}
+
+body {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/images//menu_background.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: Arial;
+    margin: 0px;
+    color: white;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+/* Style de la page des menus*/
+
+#small_logo {
+    margin-top: 25px;
+    margin-left: 25px;
+}
+
+h1 {
+    color: white;
+    background-color: #DD7835;
+    display: inline;
+    padding: 8px 22px;
+}
+
+.menu_title {
+    margin-top: 45px;
+    padding-bottom: 50px;
+}
+
+.menu_list {
+    margin-left: 30px;
+}
+
+.menu_list_item {
+    font-size: 20px;
+    margin: 30px 0px;
+    margin-left: 50px;
+}
+
+.menu_list_tile {
+    font-weight: bold;
+}
+
+.menu_list_price {
+    margin-left: 8px;
+    color: #DD7835;
+}
+
+.menu_list_ingrediants {
+    color: #D8D8D8;
+    font-size: 14px;
+    display: block;
+    margin-top: 8px;
+    width: 320px;
+}
+
+.menu_list_vegetarienne {
+    text-transform: uppercase;
+    color: black;
+    background-color: #DD7835;
+    padding: 3px 6px;
+    border-radius: 18px;
+    font-weight: bold;
+    font-size: 12px;
+    display: inline-block;
+    margin-top: 8px;
+}
+
+/* Style de la page d'accueil*/
+
+.centered {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+}
+
+body.homePage {
+    background-image: url("/images//main_background.jpg");
+}
+
+a.homePage {
+    color: red;
+    font-size: 18px;
+    display: block;
+    margin-top: 30px;
+    text-align: center;
+}
