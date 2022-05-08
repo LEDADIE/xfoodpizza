@@ -1,8 +1,10 @@
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Hosting;
 
 using System.Collections.Generic;
 using System.Configuration;
@@ -14,10 +16,16 @@ namespace xfoodpizza.Pages.Admin
     public class IndexModel : PageModel
     {
         public bool DisplayInvalideMessage = false;
+        public bool isdeveloppementMode = false;
 
-        public IndexModel(IConfiguration configuration)
+        public IndexModel(IConfiguration configuration, IWebHostEnvironment env)
         {
             Configuration = configuration;
+
+            if (env.IsDevelopment())
+            {
+                isdeveloppementMode = true;
+            }
         }
 
         public IConfiguration Configuration { get; }

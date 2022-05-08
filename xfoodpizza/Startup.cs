@@ -35,6 +35,7 @@ namespace xfoodpizza
             CultureInfo.DefaultThreadCurrentUICulture = cultureInfo;
 
             if (env.IsDevelopment())
+            //if (true)
             {
                 app.UseDeveloperExceptionPage();
             }
@@ -69,7 +70,11 @@ namespace xfoodpizza
                     options.LoginPath = "/Admin";
                 });
 
-            services.AddDbContext<DataContext>(options => options.UseSqlite(Configuration.GetConnectionString("DefaultConnection")));
+            /* Utilisation de SQLServer en production */
+            services.AddDbContext<DataContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+
+            /* Utilisations de sqLite en mode DEV */
+            //services.AddDbContext<DataContext>(options => options.UseSqlite(Configuration.GetConnectionString("DefaultConnectionSqlite")));
 
             services.AddRazorPages();
             services.AddControllers();
