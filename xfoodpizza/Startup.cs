@@ -71,10 +71,10 @@ namespace xfoodpizza
                 });
 
             /* Utilisation de SQLServer en production */
-            services.AddDbContext<DataContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+            //services.AddDbContext<DataContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
             /* Utilisations de sqLite en mode DEV */
-            //services.AddDbContext<DataContext>(options => options.UseSqlite(Configuration.GetConnectionString("DefaultConnectionSqlite")));
+            services.AddDbContext<DataContext>(options => options.UseSqlite(Configuration.GetConnectionString("DefaultConnectionSqlite")));
 
             services.AddRazorPages();
             services.AddControllers();
