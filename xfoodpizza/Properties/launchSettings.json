@@ -18,10 +18,10 @@
     }
   },
   "iisSettings": {
-    "windowsAuthentication": false,
-    "anonymousAuthentication": true,
+    "windowsAuthentication": true,
+    "anonymousAuthentication": false,
     "iisExpress": {
-      "applicationUrl": "http://localhost:17979",
+      "applicationUrl": "https://localhost:17979",
       "sslPort": 44326
     }
   }

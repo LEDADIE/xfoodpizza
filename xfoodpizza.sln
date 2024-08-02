@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32421.90
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "xfoodpizza", "xfoodpizza\xfoodpizza.csproj", "{4B9639F9-E1B1-4C04-B0A9-242CF6A58E1B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "xfoodpizza", "xfoodpizza\xfoodpizza.csproj", "{4B9639F9-E1B1-4C04-B0A9-242CF6A58E1B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
